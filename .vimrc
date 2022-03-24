@@ -18,3 +18,6 @@ set wildmenu                " Display completion matches in a status line
 syntax on                   " Turn on syntax highlighting
 
 let g:rainbow_active = 1    " for vim-rainbow plugin
+
+packadd! onedark.vim
+colorscheme onedark
