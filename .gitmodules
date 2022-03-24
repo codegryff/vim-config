@@ -10,3 +10,6 @@
 [submodule ".vim/pack/colors/opt/onedark.vim"]
 	path = .vim/pack/colors/opt/onedark.vim
 	url = https://github.com/joshdick/onedark.vim.git
+[submodule ".vim/pack/colors/opt/vim-monokai"]
+	path = .vim/pack/colors/opt/vim-monokai
+	url = https://github.com/crusoexia/vim-monokai.git
