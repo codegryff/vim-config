@@ -10,6 +10,7 @@ set novisualbell            " turn off visualbell
 set nowrap                  " Don't split long lines
 set number                  " Show line numbers
 set ruler                   " Show the cursor position all the time
+set shiftwidth=4            " Set how many spaces for indentation via >>
 set showcmd                 " Show the current command
 set showmatch               " Highlight the opening bracket/parentheses when the closing one is written
 set tabstop=4               " Set how many spaces a tab is
