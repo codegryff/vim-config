@@ -18,7 +18,11 @@ set wildmenu                " Display completion matches in a status line
 
 syntax on                   " Turn on syntax highlighting
 
-let g:rainbow_active = 1    " for vim-rainbow plugin
 
-packadd! vim-monokai
-colorscheme monokai
+
+" Vim 8 brings native third-party package loading
+if (v:version >= 800)
+    let g:rainbow_active = 1    " for vim-rainbow plugin
+    packadd! vim-monokai
+    colorscheme monokai
+endif
