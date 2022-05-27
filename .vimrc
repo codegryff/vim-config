@@ -1,6 +1,5 @@
 set cursorcolumn            " Highlight current column
 set cursorline              " Highlight current line
-set display=truncate        " Show @@@ in the last line if it is truncated.
 set encoding=utf-8          " Set encoding to utf-8
 set expandtab               " Change tabs into spaces
 set laststatus=2            " Always display statusline
@@ -20,9 +19,19 @@ syntax on                   " Turn on syntax highlighting
 
 
 
-" Vim 8 brings native third-party package loading
 if (v:version >= 800)
+    " Vim 8 brings native third-party package loading
     let g:rainbow_active = 1    " for vim-rainbow plugin
     packadd! vim-monokai
+    colorscheme monokai
+else
+    " Use vim-plug
+    call plug#begin('~/.vim/plugged')
+    Plug '~/.vim/pack/plugins/start/lightline'
+    Plug '~/.vim/pack/plugins/start/nerdtree'
+    Plug '~/.vim/pack/plugins/start/vim-rainbow'
+    Plug '~/.vim/pack/colors/opt/vim-monokai'
+    call plug#end
+    let g:rainbow_active = 1    " for vim-rainbow plugin
     colorscheme monokai
 endif
