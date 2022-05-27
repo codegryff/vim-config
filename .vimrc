@@ -31,7 +31,7 @@ else
     Plug '~/.vim/pack/plugins/start/nerdtree'
     Plug '~/.vim/pack/plugins/start/vim-rainbow'
     Plug '~/.vim/pack/colors/opt/vim-monokai'
-    call plug#end
+    call plug#end()
     let g:rainbow_active = 1    " for vim-rainbow plugin
     colorscheme monokai
 endif
